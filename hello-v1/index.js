@@ -3,7 +3,7 @@ module.exports = async function (context, req) {
 
     if (req.body && req.body.name) {
         context.res = {
-            body: "Hello " + req.body.name
+            body: "Hello (v1) " + req.body.name
         };
     }
     else {
