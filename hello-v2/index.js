@@ -1,4 +1,4 @@
-module.exports = async function (context, req) {
+module.exports = function (context, req) {
     context.log('Received request');
 
     if (req.body && req.body.name) {
