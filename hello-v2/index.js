@@ -11,5 +11,8 @@ module.exports = async function (context, req) {
             status: 400,
             body: "Please pass a name on the query string or in the request body"
         };
-    }
+    };
+
+    context.bindings.outputBlob = "Hello (v1) " + req.body.name;
+    context.done();
 };
