@@ -13,6 +13,6 @@ module.exports = function (context, req) {
         };
     };
 
-    context.bindings.outputBlob = "Hello (v1) " + req.body.name;
+    //context.bindings.outputBlob = "Hello (v1) " + req.body.name;
     context.done();
 };
